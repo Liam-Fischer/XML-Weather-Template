@@ -21,7 +21,7 @@ namespace XMLWeather
         public void DisplayCurrent()
         {
             label3.Parent  = pictureBox;
-            forecastLabel.Parent  = pictureBox;
+            forecastLabel.Parent = pictureBox;
             label5.Parent = pictureBox;
 
 
