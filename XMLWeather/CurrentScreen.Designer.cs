@@ -38,77 +38,90 @@
             this.label3 = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.windLabel = new System.Windows.Forms.Label();
+            this.windOutput = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
             // 
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
+            this.cityOutput.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(32, 131);
-            this.cityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cityOutput.Location = new System.Drawing.Point(502, 8);
             this.cityOutput.Name = "cityOutput";
-            this.cityOutput.Size = new System.Drawing.Size(106, 35);
+            this.cityOutput.Size = new System.Drawing.Size(210, 37);
             this.cityOutput.TabIndex = 22;
             this.cityOutput.Text = "City";
             // 
             // maxOutput
             // 
-            this.maxOutput.BackColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(176, 278);
-            this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxOutput.BackColor = System.Drawing.Color.Transparent;
+            this.maxOutput.Font = new System.Drawing.Font("Century Gothic", 33.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(158)))), ((int)(((byte)(148)))));
+            this.maxOutput.Location = new System.Drawing.Point(36, 114);
             this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(170, 20);
+            this.maxOutput.Size = new System.Drawing.Size(113, 94);
             this.maxOutput.TabIndex = 32;
+            this.maxOutput.Text = "10";
+            this.maxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // maxLabel
             // 
             this.maxLabel.AutoSize = true;
+            this.maxLabel.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxLabel.ForeColor = System.Drawing.Color.White;
-            this.maxLabel.Location = new System.Drawing.Point(32, 278);
-            this.maxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxLabel.Location = new System.Drawing.Point(30, 72);
             this.maxLabel.Name = "maxLabel";
-            this.maxLabel.Size = new System.Drawing.Size(38, 20);
+            this.maxLabel.Size = new System.Drawing.Size(81, 25);
             this.maxLabel.TabIndex = 31;
-            this.maxLabel.Text = "max";
+            this.maxLabel.Text = "High Of";
             // 
             // minOutput
             // 
-            this.minOutput.BackColor = System.Drawing.Color.White;
-            this.minOutput.Location = new System.Drawing.Point(176, 243);
-            this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minOutput.BackColor = System.Drawing.Color.Transparent;
+            this.minOutput.Font = new System.Drawing.Font("Century Gothic", 33.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.minOutput.Location = new System.Drawing.Point(26, 273);
             this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(170, 20);
+            this.minOutput.Size = new System.Drawing.Size(113, 94);
             this.minOutput.TabIndex = 30;
+            this.minOutput.Text = "1";
+            this.minOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // minLabel
             // 
             this.minLabel.AutoSize = true;
+            this.minLabel.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minLabel.ForeColor = System.Drawing.Color.White;
-            this.minLabel.Location = new System.Drawing.Point(32, 243);
-            this.minLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minLabel.Location = new System.Drawing.Point(40, 231);
             this.minLabel.Name = "minLabel";
-            this.minLabel.Size = new System.Drawing.Size(34, 20);
+            this.minLabel.Size = new System.Drawing.Size(75, 25);
             this.minLabel.TabIndex = 29;
-            this.minLabel.Text = "min";
+            this.minLabel.Text = "Low Of";
             // 
             // currentOutput
             // 
+            this.currentOutput.AutoSize = true;
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
-            this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(196, 209);
-            this.currentOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentOutput.Font = new System.Drawing.Font("Century Gothic", 38.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentOutput.ForeColor = System.Drawing.Color.Lime;
+            this.currentOutput.Location = new System.Drawing.Point(284, 129);
             this.currentOutput.Name = "currentOutput";
-            this.currentOutput.Size = new System.Drawing.Size(33, 20);
+            this.currentOutput.Size = new System.Drawing.Size(0, 60);
             this.currentOutput.TabIndex = 28;
+            this.currentOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tempLabel
             // 
             this.tempLabel.AutoSize = true;
+            this.tempLabel.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.Color.White;
-            this.tempLabel.Location = new System.Drawing.Point(32, 209);
-            this.tempLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tempLabel.Location = new System.Drawing.Point(236, 80);
             this.tempLabel.Name = "tempLabel";
-            this.tempLabel.Size = new System.Drawing.Size(157, 20);
+            this.tempLabel.Size = new System.Drawing.Size(199, 25);
             this.tempLabel.TabIndex = 26;
             this.tempLabel.Text = "Current Temperature";
             // 
@@ -117,10 +130,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(32, 22);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(21, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 43);
+            this.label3.Size = new System.Drawing.Size(83, 28);
             this.label3.TabIndex = 40;
             this.label3.Text = "Today";
             // 
@@ -129,31 +141,73 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(212, 22);
-            this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.forecastLabel.Location = new System.Drawing.Point(140, 14);
             this.forecastLabel.Name = "forecastLabel";
-            this.forecastLabel.Size = new System.Drawing.Size(124, 43);
+            this.forecastLabel.Size = new System.Drawing.Size(83, 28);
             this.forecastLabel.TabIndex = 41;
             this.forecastLabel.Text = "7 Day";
             this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(29, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(19, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 41);
+            this.label5.Size = new System.Drawing.Size(115, 33);
             this.label5.TabIndex = 42;
             this.label5.Text = "____________________________";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // windLabel
+            // 
+            this.windLabel.AutoSize = true;
+            this.windLabel.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel.ForeColor = System.Drawing.Color.White;
+            this.windLabel.Location = new System.Drawing.Point(554, 94);
+            this.windLabel.Name = "windLabel";
+            this.windLabel.Size = new System.Drawing.Size(73, 25);
+            this.windLabel.TabIndex = 43;
+            this.windLabel.Text = "Winds:";
+            // 
+            // windOutput
+            // 
+            this.windOutput.AutoSize = true;
+            this.windOutput.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windOutput.ForeColor = System.Drawing.Color.LemonChiffon;
+            this.windOutput.Location = new System.Drawing.Point(542, 129);
+            this.windOutput.Name = "windOutput";
+            this.windOutput.Size = new System.Drawing.Size(0, 36);
+            this.windOutput.TabIndex = 44;
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.timeLabel.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.ForeColor = System.Drawing.Color.White;
+            this.timeLabel.Location = new System.Drawing.Point(235, 401);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(210, 37);
+            this.timeLabel.TabIndex = 45;
+            this.timeLabel.Text = "00:00 mm, dd";
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(750, 450);
+            this.pictureBox.TabIndex = 46;
+            this.pictureBox.TabStop = false;
+            // 
             // CurrentScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.timeLabel);
+            this.Controls.Add(this.windOutput);
+            this.Controls.Add(this.windLabel);
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cityOutput);
@@ -164,9 +218,10 @@
             this.Controls.Add(this.currentOutput);
             this.Controls.Add(this.tempLabel);
             this.Controls.Add(this.label5);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Controls.Add(this.pictureBox);
             this.Name = "CurrentScreen";
-            this.Size = new System.Drawing.Size(375, 615);
+            this.Size = new System.Drawing.Size(750, 450);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +238,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label forecastLabel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label windLabel;
+        private System.Windows.Forms.Label windOutput;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
