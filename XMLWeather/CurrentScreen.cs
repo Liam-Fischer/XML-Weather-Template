@@ -26,8 +26,15 @@ namespace XMLWeather
 
 
 
-
-            cityOutput.Text = Form1.daysList[0].location;
+            try
+            {
+                Form1.city = cityOutput.Text;
+            }
+            catch 
+            {
+                Form1.city = "Stratford,CA";
+                cityOutput.Text = "Stratford,CA";
+            }
             minOutput.Text = Form1.daysList[0].tempLow;
             maxOutput.Text = Form1.daysList[0].tempHigh;
             currentOutput.Text = Form1.daysList[0].currentTemp;
@@ -43,6 +50,13 @@ namespace XMLWeather
 
             ForecastScreen fs = new ForecastScreen();
             f.Controls.Add(fs);
+        }
+
+        public void goButton_Click(object sender, EventArgs e)
+        {
+            Form1.ExtractForecast();
+            Form1.ExtractCurrent();
+            DisplayCurrent();
         }
     }
 }
